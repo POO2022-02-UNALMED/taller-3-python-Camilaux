@@ -1,38 +1,38 @@
 class Control:
 
     def __init__(self):
-        self._tv = None
+        self.__tv = None
 
     def enlazar(self,tele):
-        self._tv = tele
+        self.__tv = tele
         tele.setControl(self)
 
     def turnOn(self):
-        self._tv.turnOn()
+        self.__tv.turnOn()
 
     def turnOff(self):
-        self._tv.turnOff()
+        self.__tv.turnOff()
 
     def canalUp(self):
-        self._tv.canalUp()
+        self.__tv.canalUp()
 
     def canalDown(self):
-        self._tv.canalDown()
+        self.__tv.canalDown()
 
     def volumenUp(self):
-        self._tv.volumenUp()
+        self.__tv.volumenUp()
 
     def volumneDown(self):
-        self._tv.volumenDown()
+        self.__tv.volumenDown()
 
     def setCanal(self,canal):
-        self._tv.setCanal(canal)
+        self.__tv.setCanal(canal)
 
     def setTv(self,tv):
-        self._tv = tv
+        self.__tv = tv
 
     def getTv(self):
-        return self._tv
+        return self.__tv
 
 
     
